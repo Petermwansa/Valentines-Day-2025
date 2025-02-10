@@ -33,7 +33,7 @@ const showLove = () => {
     
     // we create a dive to display the heart 
     let loveText = document.createElement("div");
-    loveText.innerHTML = "Thank You! <br> I Love You! <br> Baby Girl <br> Melochka";
+    loveText.innerHTML = "I Love You! <br> Baby Girl <br> Melochka";
     loveText.classList.add("love-text");
     document.body.appendChild(loveText);
     yes.classList.add('hide');
