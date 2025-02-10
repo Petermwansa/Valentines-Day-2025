@@ -74,7 +74,7 @@ button {
     font-size: 30px;
     color: black;
     animation: fadeIn 8s ease-in-out forwards 1.5s;
-    line-height: 3rem;
+    line-height: 2.5rem;
 }
 @keyframes popUp {
     from {
@@ -82,7 +82,7 @@ button {
         opacity: 0;
     }
     to {
-        transform: translate(-50%, -50%) scale(6);
+        transform: translate(-50%, -50%) scale(3.5);
         opacity: 1;
     }
 }
