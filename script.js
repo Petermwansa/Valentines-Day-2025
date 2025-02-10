@@ -27,13 +27,17 @@ const showLove = () => {
     bigHeart.innerHTML = "❤️";
     bigHeart.classList.add("big-heart");
     document.body.appendChild(bigHeart);
-
+    const yes = document.getElementById('yes');
+    const no = document.getElementById('no');
+    const question = document.getElementById('question');
     
     // we create a dive to display the heart 
     let loveText = document.createElement("div");
     loveText.innerHTML = "Thank You! <br> I Love You! <br> Baby Girl <br> Melochka";
     loveText.classList.add("love-text");
     document.body.appendChild(loveText);
-
+    yes.classList.add('hide');
+    no.classList.add('hide');
+    question.classList.add('hide')
 
 }
