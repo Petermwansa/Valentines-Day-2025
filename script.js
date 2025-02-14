@@ -6,8 +6,6 @@ const increaseYesButton = () => {
     yesButton.style.transform = `scale(${scale + 0.2})`;
 }
 
-
-
 const createHeart = () => {
     let heart = document.createElement("div");
     heart.innerHTML = "❤️";
@@ -21,7 +19,6 @@ const createHeart = () => {
 }
 setInterval(createHeart, 300);
 
-
 const showLove = () => {
     let bigHeart = document.createElement("div");
     bigHeart.innerHTML = "❤️";
@@ -31,13 +28,11 @@ const showLove = () => {
     const no = document.getElementById('no');
     const question = document.getElementById('question');
     
-    // we create a dive to display the heart 
     let loveText = document.createElement("div");
-    loveText.innerHTML = "I Love You! <br> Baby Girl <br> Melochka";
+    loveText.innerHTML = "I Love You Too my lady! <br> I wish that we will always be together <br> and put the other first in every situation <br> There is no day that goes by <br> without me thinking about you. <br> I love and appreciate you soo much. <br> I am not only lucky to have you, <br> but blessed beyond every measure. <br> Thank you for being in my life.";
     loveText.classList.add("love-text");
     document.body.appendChild(loveText);
     yes.classList.add('hide');
     no.classList.add('hide');
-    question.classList.add('hide')
-
+    question.classList.add('hide');
 }

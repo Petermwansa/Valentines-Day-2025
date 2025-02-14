@@ -8,9 +8,25 @@ body {
     font-family: Arial, sans-serif;
     text-align: center;
     overflow: hidden;
+    position: relative;
 }
+
+/* Background image with opacity */
+body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('/IMG_6027\ 3.png') no-repeat center center/cover;
+    opacity: 0.5;
+    z-index: -1;
+}
+
 .container {
     position: relative;
+    z-index: 1;
 }
 .question {
     font-size: 24px;
@@ -57,6 +73,7 @@ button {
         opacity: 0;
     }
 }
+
 .big-heart {
     position: fixed;
     top: 50%;
@@ -68,13 +85,13 @@ button {
 }
 .love-text {
     position: fixed;
-    top: 47%;
+    top: 48.5%;
     left: 50%;
     transform: translate(-50%, -50%) scale(0);
-    font-size: 30px;
+    font-size: 10px;
     color: black;
     animation: fadeIn 8s ease-in-out forwards 1.5s;
-    line-height: 3rem;
+    line-height: 1rem;
 }
 @keyframes popUp {
     from {
